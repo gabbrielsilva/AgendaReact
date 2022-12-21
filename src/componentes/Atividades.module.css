@@ -1,0 +1,33 @@
+.atividades {
+    width: 46rem;
+    margin-top: 3rem;
+}
+
+.infoAtividades {
+    display: flex;
+    justify-content: space-between;
+}
+
+.atividadesParagrafo {
+    color: var(--blue);
+}
+
+.atividadesParagrafo2 {
+    color: var(--purple);
+}
+
+.contagemAtividades {
+    margin: 7px;
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    border-radius: 4px;
+}
+
+.postPublicAtividades {
+    width: 100%;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid var(--gray-400)
+}
+
+
+

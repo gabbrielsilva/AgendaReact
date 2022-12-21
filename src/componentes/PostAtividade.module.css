@@ -1,0 +1,87 @@
+.containerAtividades {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nomesAtividades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46rem;
+    height: 4.5rem;
+    background-color: var(--gray-500);
+    border: solid 1px var(--gray-400);
+    border-radius: 8px;
+    margin-top: 0.7rem;
+}
+
+.nomesAtividades input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin-right: 2rem;
+    width: 1.09rem;
+    height: 1.09rem;
+}
+
+.nomesAtividades input + span {
+    position: relative;
+    cursor: pointer;
+    padding-left: 1.875rem;
+}
+
+.nomesAtividades input + span::before {
+    content: "";
+    position: absolute;
+    width: 1.09rem;
+    height: 1.09rem;
+    left: 0;
+    border: solid 2px;
+    vertical-align: bottom;
+    border-radius: 50%;
+    color: var(--blue);
+}
+
+.nomesAtividades span{
+    color: var(--white);
+    font-size: 0.8rem;
+}
+
+.nomesAtividades input:checked + span::after {
+    content: "";
+    position: absolute;
+    justify-content: center;
+    left: 6px;
+    width: 7px;
+    height: 15px;
+    border-right: solid 3px var(--white);
+    border-bottom: solid 3px var(--white);
+    transform: rotate(45deg);
+}
+
+.nomesAtividades input:checked + span::before{
+    background-color: var(--purple);
+}
+
+.nomesAtividades button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 2px;
+    margin-left: 2rem;
+}
+
+.nomesAtividades button:hover {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--danger);
+    transition: 1s;
+}
+
+
+.nomesAtividades input:checked + span {
+    text-decoration: line-through
+}
